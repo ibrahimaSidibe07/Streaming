@@ -1,0 +1,4 @@
+
+
+
+GET https://api-staging.trakt.tv
