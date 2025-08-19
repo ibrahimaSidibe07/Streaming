@@ -1,4 +1,5 @@
 import { Contact, Film, FilmIcon, Home, Sidebar, User, User2, User2Icon, UserCircle } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 export const Sidbar = props => {
     return (
@@ -6,18 +7,18 @@ export const Sidbar = props => {
             <button className="p-2" onClick={props.onBtnClick}>
                 <Sidebar />
             </button>
-            <p className="flex gap-2 hover:bg-base-100 p-2 rounded-md">
+            <NavLink to={"/"} className="flex gap-2 hover:bg-base-100 p-2 rounded-md">
                 <Home className="shrink-0" /> Home
-            </p>
-            <p className="flex gap-2 hover:bg-base-100 p-2 rounded-md">
+            </NavLink>
+            <NavLink to={"/filmliste"} className="flex gap-2 hover:bg-base-100 p-2 rounded-md">
                 <Film className="text-red-400 shrink-0" /> Moovie
-            </p>
-            <p className="flex gap-2 hover:bg-base-100 p-2 rounded-md">
+            </NavLink>
+            <NavLink to={"/"} className="flex gap-2 hover:bg-base-100 p-2 rounded-md">
                 <Contact className="shrink-0" /> Contact
-            </p>
-            <p className="flex gap-2 hover:bg-base-100 p-2 rounded-md mt-auto">
+            </NavLink>
+            <NavLink to={"/"} className="flex gap-2 hover:bg-base-100 p-2 rounded-md mt-auto">
                 <UserCircle className="shrink-0" /> account
-            </p>
+            </NavLink>
         </div>
     );
 };

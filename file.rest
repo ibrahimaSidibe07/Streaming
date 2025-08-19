@@ -1,4 +1,4 @@
 
 
 
-GET https://api-staging.trakt.tv
+GET  https://api.tvmaze.com/search/shows?q=batman
